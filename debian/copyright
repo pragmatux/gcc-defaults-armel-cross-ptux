@@ -1,8 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 
 Files: *
-Copyright: 2014 unknown <bgat@mercury.billgatliff.com>
-License: GPL-3.0+
+Copyright: 2014 Ryan Kuester <rkuester@insymbols.com>
 
 License: GPL-3.0+
  This program is free software: you can redistribute it and/or modify

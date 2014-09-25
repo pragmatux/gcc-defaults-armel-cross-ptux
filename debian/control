@@ -1,12 +1,42 @@
 Source: gcc-defaults-armel-cross-ptux
-Section: unknown
+Section: devel
 Priority: extra
-Maintainer: unknown <bgat@mercury.billgatliff.com>
+Maintainer: Ryan Kuester <rkuester@insymbols.com>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
 
-Package: gcc-defaults-armel-cross-ptux
+Package: cpp-arm-linux-gnueabi-default-4.7
+Provides: cpp-arm-linux-gnueabi-default
+Conflicts: cpp-arm-linux-gnueabi-default
 Architecture: all
-Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: 
+ cpp-4.7-arm-linux-gnueabi,
+ ${misc:Depends}
+Description: cpp-arm-linux-gnueabi-4.7 as default
+ This package sets cpp-arm-linux-gnueabi-4.7 as the default by
+ providing the symlink cpp-arm-linux-gnueabi.
+
+Package: gcc-arm-linux-gnueabi-default-4.7
+Provides: gcc-arm-linux-gnueabi-default
+Conflicts: gcc-arm-linux-gnueabi-default
+Architecture: all
+Depends: 
+ cpp-arm-linux-gnueabi-default-4.7,
+ gcc-4.7-arm-linux-gnueabi,
+ ${misc:Depends}
+Description: gcc-arm-linux-gnueabi-4.7 as default
+ This package sets gcc-arm-linux-gnueabi-4.7 as the default by
+ providing the symlink gcc-arm-linux-gnueabi.
+
+Package: g++-arm-linux-gnueabi-default-4.7
+Provides: g++-arm-linux-gnueabi-default
+Conflicts: g++-arm-linux-gnueabi-default
+Architecture: all
+Depends: 
+ cpp-arm-linux-gnueabi-default-4.7,
+ gcc-arm-linux-gnueabi-default-4.7,
+ g++-4.7-arm-linux-gnueabi,
+ ${misc:Depends}
+Description: g++-arm-linux-gnueabi-4.7 as default
+ This package sets g++-arm-linux-gnueabi-4.7 as the default by
+ providing the symlink g++-arm-linux-gnueabi.

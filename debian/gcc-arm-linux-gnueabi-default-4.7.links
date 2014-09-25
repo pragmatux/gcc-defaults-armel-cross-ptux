@@ -1,0 +1,5 @@
+/usr/bin/arm-linux-gnueabi-gcov-4.7 /usr/bin/arm-linux-gnueabi-gcov
+/usr/bin/arm-linux-gnueabi-gcc-ranlib-4.7 /usr/bin/arm-linux-gnueabi-gcc-ranlib
+/usr/bin/arm-linux-gnueabi-gcc-ar-4.7 /usr/bin/arm-linux-gnueabi-gcc-ar
+/usr/bin/arm-linux-gnueabi-gcc-4.7 /usr/bin/arm-linux-gnueabi-gcc
+/usr/bin/arm-linux-gnueabi-gcc-nm-4.7 /usr/bin/arm-linux-gnueabi-gcc-nm
